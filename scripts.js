@@ -1,20 +1,25 @@
 //Need to remove Beverages and re-do sugars into "desserts"
 //Perhaps have multiple categories specific to dessert, that broaden the potential result set
 
-var proteins = ["Carne Asada", "Rotisserie chicken", "Hard Boiled Egg", "Lamb", "Game Hen", "Pork Chop", "Baked Ham", "Bacon", "Taco Meat", "Smoked Salmon", "Beef Jerky", "Tofu (you're welcome sarah)", "Ground bison", "Pre-cooked chicken wings", "Hot Italian sausage", "Tilapia", "Stew Meat", "Greek Yogurt"]
-var vegetable = ["Arugula", "Cucumber", "Cauliflower", "Broccoli", "Snap Peas", "Roasted Red Peppers", "Mukimane", "Canned Artichokes", "Lemon Grass", "White Mushrooms", "Turnips", "Rainbow Carrots", "Chard", "Canned Corn", "Shallots", "Garlic", "Sun Dried Tomatos"]
-var fruit = ["Strawberries", "Mandarin Orange Cups", "Pineapple Chunks", "Dragon Fruit", "Raspberries", "Grapes", "Pear", "Apple", "Black Plums", "Mangoes", "Kiwi", "Cherry Pie Filling", "Fruit Cocktail", "Grapefruit"]
-var weird = ["Jalapeno Chips", "Cheetos", "Flamin Hot Cheetos", "Cinnamon", "Crushed Red Pepper", "Spicy Pickles"]
-var beverages = ["Whiskey", "Rum", "Whipped Cream Vodka", "The Kraken", "Champagne", "Malt Liquor", "Coke"]
-var fats = ["Duck Fat", "Agave Nectar", "Lard", "Irish Butter", "Bacon Fat"]
-var sugars = ["Twinkies", "Raw Sugar", "Little Debbie Oatmeal Pies", "Donuts", "Chocolate Bar", "Candy Cane", "Sour Patch Kids", "Marshmellows", "Lemon Hard Candy", "Gum Drops", "Peeps"]
-var carbstarch = ["Baked Potato", "Hawaiian Rolls", "Crostinis", "Minute Rice", "Brown Rice", "Stuffing Shells", "Mac and Cheese", "Cavatappi Pasta", "Saltine Crackers", "Hamburger Buns", "Taco Shells", "Frozen Lasagne", "Wonton Wrappers"]
+var proteins = ["Carne Asada", "Rotisserie chicken", "Hard Boiled Egg", "Lamb", "Game Hen", "Pork Chop", "Baked Ham", "Bacon", "Taco Meat", "Smoked Salmon", "Beef Jerky", "Tofu (you're welcome Sarah)", "Ground Bison", "Pre-cooked Chicken Wings", "Hot Italian Sausage", "Tilapia", "Stew Meat", "Greek Yogurt", "Corn dogs"]
+var vegetable = ["Arugula", "Cucumber", "Cauliflower", "Broccoli", "Snap Peas", "Roasted Red Peppers", "Mukimane", "Canned Artichokes", "Lemon Grass", "White Mushrooms", "Turnips", "Rainbow Carrots", "Chard", "Canned Corn", "Shallots", "Garlic", "Sun Dried Tomatos", "Red Potato", "Black Beans", "Avocado"]
+var fruit = ["Strawberries", "Mandarin Orange Cups", "Pineapple Chunks", "Dragon Fruit", "Raspberries", "Grapes", "Pear", "Apple", "Mangoes", "Kiwi", "Cherry Pie Filling", "Fruit Cocktail", "Grapefruit", "Kumquat", "Dates", "Maraschino Cherries"]
+var weird = ["Jalapeno Chips", "Cheetos", "Flamin Hot Cheetos", "Cinnamon", "Crushed Red Pepper", "Spicy Pickles", "Pork Rinds", "Top Ramen", "Goldfish", "Cheezits", "Instant Oatmeal", "Wasabi Peas", "Rice Crispies", "Thai Curry Paste", "Cheese Ball", "Coconut Flakes", "BBQ Chips", "Chipotle Salsa", "Banana Peppers", "Coconut Milk", "Olives"]
+var sugars = ["Twinkies", "Raw Sugar", "Little Debbie Oatmeal Pies", "Donuts", "Chocolate Bar", "Candy Cane", "Sour Patch Kids", "Marshmellows", "Lemon Hard Candy", "Gum Drops", "Peeps", "Reeses", "Cinnamon Roll Dough", "Honey", "Marshmellow Spread", "Nutella", "Caramel Sauce", "Maple Syrup"]
+var carbstarch = ["Baked Potato", "Hawaiian Rolls", "Crostinis", "Minute Rice", "Brown Rice", "Stuffing Shells", "Mac and Cheese", "Cavatappi Pasta", "Saltine Crackers", "Hamburger Buns", "Taco Shells", "Frozen Lasagne", "Wonton Wrappers", "Naan", "Pizza Crust", "Bagel", "French Bread", "Fancy Crackers", "Spaghetti", "Biscuit Dough", "Pad Thai Noodles", "Corn Tortillas"]
+
+
+//Removed these categories because they added nothing interesting:
+
+//var beverages = ["Whiskey", "Rum", "Whipped Cream Vodka", "The Kraken", "Champagne", "Malt Liquor", "Coke"]
+//var fats = ["Duck Fat", "Agave Nectar", "Lard", "Irish Butter", "Bacon Fat"]
+
 
 function returnEntree(){
 
   //Create the array of available sub categories and empty array of used sub categories
   //var potentialCat = ["proteins", "vegetable", "fruit", "weird", "beverages", "fats", "carbstarch"];
-  var potentialCat = [proteins, vegetable, fruit, weird, fats, carbstarch];
+  var potentialCat = [proteins, vegetable, fruit, weird, carbstarch];
   var usedCat = [];
   var selectedItems = [];
   
@@ -37,7 +42,7 @@ function returnEntree(){
 function returnAppetizer(){
 
   //Create the array of available sub categories and empty array of used sub categories
-  var potentialCat = [proteins, vegetable, fruit, weird, fats, carbstarch];
+  var potentialCat = [proteins, vegetable, fruit, weird, carbstarch];
   var usedCat = [];
   var selectedItems = [];
   
